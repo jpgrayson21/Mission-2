@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="css/default.css" rel="stylesheet" />
+    <!--bootstrap styling-->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="shortcut icon icon" type="image/x-icon" href="img/small pokeball.png" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Main" asp-action="Index">Home</a>
+        <a asp-controller="Main" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
