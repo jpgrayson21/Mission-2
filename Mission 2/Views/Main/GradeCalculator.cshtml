@@ -6,9 +6,9 @@
 }
 
 @model GradeCalculatorModel;
-
 <!--Grade calculator-->
 <h2>Grading Calculator</h2>
+
 <form method="post">
     <label>Assignments: </label>
     <input id="asgnPer" asp-for="Assignment" /><br />
@@ -22,7 +22,8 @@
     <input id="inPer" asp-for="Intex" /><br />
     <input id="btnSend" type="submit" value="Grade" />
 
-    <div asp-validation-summary="All"></div>
+    @*data validation*@
+    <div asp-validation-summary="All" ></div>
 </form>
 
-<script src="js/gradecalculator.js"></script>
+<script src="~/js/gradecalculator.js"></script>

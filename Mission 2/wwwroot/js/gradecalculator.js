@@ -1,6 +1,5 @@
 ﻿$("#btnSend").click(function () {
     /*variables*/
-    letterGrade = 'heyyooo';
     numGrade = 0;
     asgnPer = parseInt($("#asgnPer").val());
     grpPer = parseInt($("#grpPer").val());
